@@ -23,7 +23,7 @@ sift = cv2.xfeatures2d.SIFT_create()
 # detecting key points
 kps = sift.detect(thresh, None)
 
-# drawing key points on top of gray scale image
+# drawing key points on top of thresholding gray scale image
 new_img = cv2.drawKeypoints(thresh, kps, img)
 
 #showing, writing new image to file
