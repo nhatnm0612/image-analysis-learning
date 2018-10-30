@@ -26,8 +26,8 @@ kps = sift.detect(thresh, None)
 # drawing key points on top of thresholding gray scale image
 new_img = cv2.drawKeypoints(thresh, kps, img)
 
-#showing, writing new image to file
-cv2.imshow("image", new_img)
+# showing, writing new image to file
+# cv2.imshow("image", new_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 cv2.imwrite("keypoints.jpg", new_img)
